@@ -1,0 +1,25 @@
+body {
+  background-color: #e0e0e0; /* Slightly darker than white */
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif; /* Optional: Set a default font */
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  /* Additional styles for headings */
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  /* Additional styles for paragraphs */
+}
+input,
+textarea,
+label {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,215 @@
+.create-new-content {
+}
+.new-group {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: white;
+  min-height: 20rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.group-inp-img {
+  display: flex;
+  justify-content: space-between;
+}
+.group-inp-img input {
+  height: 20px;
+  margin-bottom: 5px;
+}
+.group-img {
+  margin: 0 30px;
+  object-fit: cover;
+  width: 120px;
+  border-radius: 3px;
+  display: none;
+}
+.group-img.active {
+  display: inline;
+}
+.group-upload-img {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 2px 3px; /* Adjust padding as needed */
+  font-size: 12px; /* Font size for button text */
+  color: blue; /* Text color */
+  background-color: white; /* White background */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-right: 2px; /* Right margin of 2px */
+  height: 30px; /* Button height */
+  width: auto; /* Allow button width to adjust based on content */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+.group-upload-img img {
+  object-fit: cover;
+  height: 30px;
+}
+
+.group-name,
+.group-description {
+  margin-bottom: 20px; /* Space between groups */
+}
+.group-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-name span,
+.group-description span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.group-name input,
+.group-description textarea {
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.file-label {
+  cursor: pointer;
+}
+.group-description textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+.flashcard-terms {
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 20px;
+  height: auto;
+  min-height: 20px;
+  margin: 0;
+  border-radius: 5px;
+  text-align: left;
+}
+.circle-list {
+  list-style-type: none; /* Remove default list styles */
+  counter-reset: list-counter; /* Initialize counter */
+}
+
+.circle-list li {
+  display: flex;
+  justify-content: space-between;
+  counter-increment: list-counter; /* Increment counter for each list item */
+  margin-bottom: 10px; /* Add spacing between list items */
+  position: relative; /* Position for pseudo-element */
+}
+
+.circle-list li::before {
+  content: counter(list-counter); /* Display counter content */
+  position: absolute; /* Position the counter */
+  left: -35px; /* Adjust position as needed */
+  width: 20px; /* Set width for counter */
+  height: 20px; /* Set height for counter */
+  text-align: center; /* Center text in counter */
+  line-height: 20px; /* Center vertically */
+  color: white; /* Text color */
+  background-color: lightcoral; /* Circle background color */
+  border-radius: 5px; /* Rounded shape for circle */
+}
+
+.term,
+.definition,
+.image {
+  margin-right: 20px; /* Add margin right to term, definition, and image */
+}
+
+.term label,
+.definition label,
+.image label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.term input,
+.definition input,
+.image input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.image input[type="file"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.term-img {
+  object-fit: cover;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.add-more-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+
+/* Vertically stack all list items with margin-right */
+.circle-list li {
+  margin-right: 20px; /* Add margin-right to each list item */
+}
+.term-buttons {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+.term-buttons button {
+  margin-bottom: 7px; /* Add space between buttons */
+  padding: 2px 3px; /* Adjusted padding */
+  color: #007bff; /* Text color */
+  border: 1px solid #007bff; /* Border with blue color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  display: flex; /* Allow inline elements */
+  align-items: center; /* Center inline elements vertically */
+}
+
+.term-buttons button img {
+  margin: 1px 2px; /* Add space between image and text */
+  height: 20px; /* Set image height */
+}
+
+.term-add-btn {
+  height: 1.8rem;
+  margin-top: 20px;
+  padding: 1px 12px; /* Adjusted padding */
+  background-color: #ff7070; /* Red background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  white-space: nowrap;
+}
+.term-add-btn:hover {
+  background-color: red;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-btn {
+  background-color: lightcoral;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 7px 20px;
+  margin: 20px auto;
+}

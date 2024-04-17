@@ -1,0 +1,69 @@
+.my-cards-content {
+  background-color: #f2f2f2; /* Slightly greyish background */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+.my-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px; /* Gap between grid items */
+  height: fit-content;
+}
+
+.seemore-btn {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 745px;
+  right: 30px;
+  border: none;
+  color: blue;
+}
+
+.my-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  height: fit-content;
+  width: 100%;
+  border-radius: 5px;
+  gap: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.card-content h3,
+.card-content p {
+  color: #333;
+}
+
+.card-content button {
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+.card-content span {
+  margin-bottom: 5px;
+}
+.card-content button:hover {
+  background-color: red;
+  color: white;
+  border-color: transparent;
+}

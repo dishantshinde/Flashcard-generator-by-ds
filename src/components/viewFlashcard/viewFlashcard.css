@@ -1,0 +1,248 @@
+.flashcards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4d4a4a;
+}
+
+.flashcard-title {
+  text-align: left;
+  padding: 0 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-right: 20px;
+}
+.flashcard-details,
+.flashcard-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-right: 20px;
+}
+.flashcard-details {
+  width: 50rem;
+}
+.flashcard-actions {
+  background-color: transparent; /* Transparent background */
+  box-shadow: none; /* Remove box shadow */
+  width: 150px;
+}
+.flashcard-actions button {
+  display: flex;
+  align-items: center;
+}
+.flashcard-actions button img {
+  margin-right: 10px;
+  height: 20px;
+  width: auto;
+}
+.flashcard-actions button {
+  color: #4d4a4a;
+  background-color: white; /* White background for buttons */
+  border: none; /* Remove border */
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Apply box shadow to buttons */
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin-bottom: 10px;
+  width: 100%; /* Set width to 100% for each button */
+}
+.flashcard-actions button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.flashcard-actions button:hover img {
+  height: 26px;
+}
+.group-title {
+  width: 100%;
+  font-size: 1rem;
+  color: #7e7979;
+  border-bottom: 1px solid #7e7979;
+  padding-bottom: 10px;
+}
+.group-name {
+  font-size: 1rem;
+  margin: 0;
+}
+.group-name.active {
+  color: red;
+}
+.term-ul {
+  padding-left: 5px;
+}
+.term-li {
+  list-style-type: none;
+}
+.term-li.active {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+.carousel {
+  width: 100%;
+  height: fit-content;
+}
+.carousel-inner {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.carousel-item {
+  min-width: 100%; /* Set the width of each slide */
+  transition: transform 0.3s ease;
+  display: none; /* Hide all slides initially */
+}
+
+.carousel-item.active {
+  display: block; /* Show active slide */
+}
+.carousel-item.active img {
+  width: 250px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.carousel-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.carousel-btns button {
+  border: none;
+}
+.carousel-btns button:hover {
+  color: red;
+  font-size: medium;
+}
+.carousel-prev,
+.carousel-next {
+  z-index: 1000;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.carousel-item.terms {
+  display: none; /* Initially hidden */
+}
+
+.carousel-item.terms.active {
+  display: block; /* Show when active */
+}
+
+.carousel-item.terms ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item.terms ul li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.carousel-item.terms ul li:last-child {
+  margin-bottom: 0; /* Remove margin for last list item */
+}
+.terms.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.terms.active span {
+  font-weight: bold;
+  color: red;
+  padding-bottom: 10px;
+}
+.terms.active img {
+  width: 250px;
+  height: auto;
+  border-radius: 3px;
+}
+.terms-ul-desc {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.terms-ul-desc .terms-li {
+  list-style: none; /* Remove default list styles */
+  width: 100%; /* Make each li fill the width of the ul */
+}
+#share-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 30vh;
+  z-index: 1000; /* Adjust z-index as needed */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+.modal-content {
+  height: 100%; /* Set height to 100% */
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.modal-content p {
+  text-align: left;
+  width: 100%;
+}
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  border: none;
+  background: white;
+}
+.social-icon {
+  margin-right: 50px;
+}
+.social-icon:last-child {
+  margin-right: 0;
+}
+.social-icon img {
+  object-fit: cover;
+  width: 26px;
+  height: auto;
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.link {
+  padding-right: 7px;
+}
+#copyInput {
+  border: none;
+  background-color: #f5f5f5;
+}
+.input-container button {
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+.input-container button img {
+  object-fit: cover;
+  width: 20px;
+  filter: brightness(70%);
+}
+.input-container button:hover img {
+  filter: brightness(100%);
+}

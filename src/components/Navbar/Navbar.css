@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  margin-bottom: 10px;
+  height: 30px;
+  position: relative;
+}
+.navbar-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-heading img {
+  width: 55px;
+  padding-right: 15px;
+}
+
+.heading-text {
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-login {
+  position: absolute;
+  right: 30px;
+}
+.login-button {
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
