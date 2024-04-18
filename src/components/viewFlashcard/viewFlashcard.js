@@ -124,7 +124,9 @@ const ViewFlashcard = ({ selectedGroup }) => {
                       selectedGroup.termsList.length + 1
                     }`}
               </span>
-              <button className="carousel-next" onClick={nextPage}></button>
+              <button className="carousel-next" onClick={nextPage}>
+                {">>"}
+              </button>
             </div>
           </div>
         )}
