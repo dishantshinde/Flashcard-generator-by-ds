@@ -14,6 +14,16 @@ const ViewFlashcard = ({ selectedGroup }) => {
   const slidesRef = useRef(null);
 
   useEffect(() => {
+    if (sharebtn) {
+      const overlayDiv = document.querySelector(".overlay");
+      overlayDiv.classList.add("active");
+    } else {
+      const overlayDiv = document.querySelector(".overlay");
+      overlayDiv.classList.remove("active");
+    }
+  }, [sharebtn]);
+
+  useEffect(() => {
     if (slidesRef.current) {
       const slides = slidesRef.current.querySelectorAll(".carousel-item li");
     }
@@ -114,9 +124,7 @@ const ViewFlashcard = ({ selectedGroup }) => {
                       selectedGroup.termsList.length + 1
                     }`}
               </span>
-              <button className="carousel-next" onClick={nextPage}>
-                {">>"}
-              </button>
+              <button className="carousel-next" onClick={nextPage}></button>
             </div>
           </div>
         )}
@@ -133,6 +141,7 @@ const ViewFlashcard = ({ selectedGroup }) => {
         </button>
       </div>
       <ShareModal sharebtn={sharebtn} setsharebtn={setsharebtn} />
+      <div className="overlay blur"></div>
     </div>
   );
 };
