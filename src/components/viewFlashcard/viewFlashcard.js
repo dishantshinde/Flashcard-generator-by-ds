@@ -23,12 +23,6 @@ const ViewFlashcard = ({ selectedGroup }) => {
     }
   }, [sharebtn]);
 
-  useEffect(() => {
-    if (slidesRef.current) {
-      const slides = slidesRef.current.querySelectorAll(".carousel-item li");
-    }
-  }, [selectedGroup]);
-
   function nextPage() {
     if (currentPage === selectedGroup.termsList.length - 1) {
       return;
