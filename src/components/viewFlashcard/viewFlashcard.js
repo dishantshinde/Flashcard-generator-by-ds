@@ -106,7 +106,7 @@ const ViewFlashcard = ({ selectedGroup }) => {
                       }`}
                     >
                       <span>{term.term}</span>
-                      <img src={term.image} alt="term-image" />
+                      <img src={term.image} alt="term-img" />
                       <p>{term.definition}</p>
                     </li>
                   ))}
@@ -186,13 +186,19 @@ function ShareModal({ sharebtn, setsharebtn }) {
             </button>
           </div>
           <div className="social-icons">
-            <a href="#" className="social-icon">
+            <a
+              href="https://www.facebook.com/dishant.shinde.503"
+              className="social-icon"
+            >
               <img src={facebooklogo} alt="Facebook" />
             </a>
             <a href="#" className="social-icon">
               <img src={twitterlogo} alt="Twitter" />
             </a>
-            <a href="#" className="social-icon">
+            <a
+              href="www.linkedin.com/in/dishant-shinde-33a003211"
+              className="social-icon"
+            >
               <img src={linkedinlogo} alt="LinkedIn" />
             </a>
           </div>

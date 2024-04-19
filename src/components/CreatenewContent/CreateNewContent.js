@@ -84,7 +84,7 @@ export function Newgroup({
           />
           <img
             src={fileName}
-            alt={fileName ? `Image for ${fileName}` : ""}
+            alt={fileName ? `${fileName}` : ""}
             className={`group-img ${fileName ? "active" : ""}`}
           />
           <div className="group-upload-img">
@@ -182,7 +182,7 @@ export function Flashcardterms({ termsList, setTermsList }) {
               />
             </div>
             <div className="image">
-              <img src={termItem.image} alt="term-image" className="term-img" />
+              <img src={termItem.image} alt="term-img" className="term-img" />
             </div>
             <div className="term-buttons">
               <button onClick={() => handleDeleteTerm(index)}>
